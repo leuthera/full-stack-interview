@@ -1,4 +1,11 @@
-# :star: Full Stack interview Questions and Answers :star:
+<h1 align="center">
+Full Stack Interview Q & A
+</h1>
+<div align="center"> 
+    <img src="https://cdn.rawgit.com/monkey3310/full-stack-interview/master/assets/startup-life.svg" alt="Full Stack Interview Q & A" width="400"/>    
+</div>
+
+## What is this?
 Full Stack Questions for job interviews 
 
 ## Client Side
