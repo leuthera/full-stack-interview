@@ -34,3 +34,91 @@ As an `object method` its `this` is set to the object the method is called on.
         Answer
     </summary>
 </details>
+
+### 3. What is `===` operator?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 4. List out the different ways an HTML element can be accessed in a Javascript code.
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 5. What does a `typeof` operator do?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 6. What is the difference between Local Storage and Session Storage?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 7. What is the difference between null and undefined?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 8. What are anonymous functions in Javascript?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 9. What is a function callback?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 10. What is the difference between innerHTML and innerText?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 11. What is the difference between HTMLCollection and NodeList?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 12. What is an Event Bubbling in Javascript?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
+
+### 13. What is NaN in Javascript?
+:star: _Junior_
+<details>
+    <summary>            
+        Answer
+    </summary>
+</details>
