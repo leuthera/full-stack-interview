@@ -33,11 +33,19 @@ As an `object method` its `this` is set to the object the method is called on.
     <summary>
         Answer
     </summary>
+const is a signal that the identifier won’t be reassigned. It needs initialisation upfront, so you can't write const something;
 
-The most difference is scoping.
-var - declaration which gets hoisted inside a function block
-let - declaration which is scoped to a enclosing block e.g. if () { scope }
-const - declaration which cant be altered afterwards
+let, is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm.
+
+var is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.
+It's declaration is hoisted, instead of let and const.
+
+```
+for ( var i=0; i<2; i++ ) {} console.log(i) // exists outside the blockscope
+for ( let i=0; i<2; i++ ) {} console.log(i) // only exists inside the blockscope
+for ( const i=0; i<2; i++ ) {} console.log(i) // error reassignment, but only on top-level
+for ( const cnt={i:0}; cnt.i<2; cnt.i++ ) {} // only exists inside the blockscope
+```
 
 </details>
 
@@ -203,7 +211,7 @@ it creates a new function which prevents accidental loss of scope. An alternativ
         Answer
     </summary>
 
-Function that will take a function as rgument or return a new function
+Function that will take a function as argument or return a new function. For example [].map/filter/reduce are higer order functions.
 
 </details>
 
