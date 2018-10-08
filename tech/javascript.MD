@@ -48,8 +48,7 @@ const - declaration which cant be altered afterwards
         Answer
     </summary>
 
-This is the strict comparision operator e.g. 5 == '5' = true vs 5 === '5' = false
-
+This is the strict comparision operator e.g. 5 == '5' = true vs 5 === '5' = false, this means that it checks the value and also the type, so that Int 5 isn't equal a Str 5.
 </details>
 
 ### 4. List out the different ways an HTML element can be accessed in a Javascript code.
@@ -59,9 +58,19 @@ This is the strict comparision operator e.g. 5 == '5' = true vs 5 === '5' = fals
         Answer
     </summary>
 
-Access one element: document.getElementById('id'), document.querySelector('#id') returns first matching node, old vs new selector interface, should be faster, but depends on browser implementation, querySelector can take any css-selector and is more comfortable
+Access one element:
+```
+    let byID = document.getElementById('id');
+    let qS = document.querySelector('#id');
+```
+They return the first matching node. querySelector is the new selector interface, should be faster, but depends on browser implementation. querySelector can take any css-selector and is more comfortable.
 
-Access one and more: document.getElementsByClassName(classname), document.querySelectorAll('.classname') returns a non-live NodeList (array-like list of elements, some functions are missing like push(), pop()).
+Access one and more:
+```
+    let byClass = document.getElementsByClassName(classname);
+    let qSA = document.querySelectorAll('.classname');
+```
+They return a non-live NodeList, which is an array-like list of elements, array-like means that some functions are missing like push(), pop()).
 
 </details>
 
@@ -155,8 +164,9 @@ q-unit, mocha, chai, sinonJS, jasmine, ...
         Answer
     </summary>
 
-Means that you can use functions and "var"-s before you declare them
+Means that the declaration moved to the top of the current scope (current script or the current function). JavaScript only hoists declarations, not initializations.
 
+let and const don't get hoisted.
 </details>
 
 ### 16. What means "use strict"?
@@ -170,14 +180,19 @@ Switches to strict mode which helps to prevent common errors like using unsafe o
 
 </details>
 
-### 17. When to use .bind()?
+### 17. What is bind() and when we use it?
+
 :star: _Senior_
 <details>
     <summary>
         Answer
     </summary>
 
-To switch the context of an method e.g. fn.bind({context_member:1})(args)
+bind is a method to bind the current context for later execution e.g.
+```
+element.addEventListener('click', this.onClick.bind(this), false);
+```
+it creates a new function which prevents accidental loss of scope. An alternative approach is to use apply, call or ES6 fat-arrow function.
 
 </details>
 
@@ -201,8 +216,7 @@ Function that will take a function as rgument or return a new function
 
 map - to iterate over an array and return a new one
 filter - to filter an array and return a new filtered one
-reduce - to do what ever you want with an array and return whatever you want, e.g. filter some values and summarize them
-
+reduce - takes and reducer function which evaluate against every element and can produce every desired output (filter, map or simple value like sum)
 </details>
 
 ### 20. When to use event delegation?
