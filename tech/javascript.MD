@@ -2,7 +2,7 @@
 JavaScript Interview Questions & Answers
 </h1>
 <p align="center"> 
-    <img src="https://github.com/monkey3310/full-stack-interview/blob/feature/3/assets/js-logo.svg" alt="JavaScript Interview Questions & Answers" width="200"/>    
+    <img src="https://github.com/monkey3310/full-stack-interview/blob/master/assets/js-logo.svg" alt="JavaScript Interview Questions & Answers" width="200"/>    
 </p>
 
 _Note: Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would._
